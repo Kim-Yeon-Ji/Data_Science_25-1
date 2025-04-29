@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d64c117d68bf755a3e939e4abe6fa36c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d64c117d68bf755a3e939e4abe6fa36c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d64c117d68bf755a3e939e4abe6fa36c = L.map(
+                "map_d64c117d68bf755a3e939e4abe6fa36c",
+                {
+                    center: [37.5, 126.8],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c125b4bd60030d5da01e97f9de9313b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5c125b4bd60030d5da01e97f9de9313b.addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            var circle_5ef5a2fd569b39d87d24f9d992c6ed70 = L.circle(
+                [37.50444398, 126.8608834],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_5ef5a2fd569b39d87d24f9d992c6ed70.bindTooltip(
+                `<div>
+                     고척재미난
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6a55a4dc357729109d0779c30c98d5fd = L.circle(
+                [37.48514285, 126.8868332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_6a55a4dc357729109d0779c30c98d5fd.bindTooltip(
+                `<div>
+                     구로(장애통합)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c8cb537b11f993572ef6940c98769ea8 = L.circle(
+                [37.48058059, 126.8397853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_c8cb537b11f993572ef6940c98769ea8.bindTooltip(
+                `<div>
+                     구로구공립
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5500a173ac1c1556f24ab9667dafb7f9 = L.circle(
+                [37.49481925, 126.8846247],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_5500a173ac1c1556f24ab9667dafb7f9.bindTooltip(
+                `<div>
+                     구로파랑새나눔터공부방
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_30b0620e415ae4a3297dce3404c954f7 = L.circle(
+                [37.49662399, 126.8884047],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_30b0620e415ae4a3297dce3404c954f7.bindTooltip(
+                `<div>
+                     구로푸른학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_8e53365619ff607ac4b9a17b070f2bbb = L.circle(
+                [37.48991022, 126.8536485],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_8e53365619ff607ac4b9a17b070f2bbb.bindTooltip(
+                `<div>
+                     구로행복한
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_e34da56dc2525a5e6ffceb0aa88ffa7b = L.circle(
+                [37.50268658, 126.8447603],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_e34da56dc2525a5e6ffceb0aa88ffa7b.bindTooltip(
+                `<div>
+                     그루터기배움터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_0286c3a605eadd824fa327f9b871b413 = L.circle(
+                [37.50078398, 126.8556049],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_0286c3a605eadd824fa327f9b871b413.bindTooltip(
+                `<div>
+                     금강
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_069b525bd5160f058fa1f420bbfdb707 = L.circle(
+                [37.4969978, 126.840627],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_069b525bd5160f058fa1f420bbfdb707.bindTooltip(
+                `<div>
+                     꿈나래
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a8b089bd36d1c105119dc682520897ff = L.circle(
+                [37.48953574, 126.8570212],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_a8b089bd36d1c105119dc682520897ff.bindTooltip(
+                `<div>
+                     꿈의학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b3de981d8247ec5d3640634a14fda982 = L.circle(
+                [37.48725884, 126.8864234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_b3de981d8247ec5d3640634a14fda982.bindTooltip(
+                `<div>
+                     누리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1d62ac325e664e1d066accc9c74f908d = L.circle(
+                [37.48404393, 126.8216736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_1d62ac325e664e1d066accc9c74f908d.bindTooltip(
+                `<div>
+                     라이프칠드런
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9e792b70883d297baa61fb8074cf36aa = L.circle(
+                [37.50000726, 126.841369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_9e792b70883d297baa61fb8074cf36aa.bindTooltip(
+                `<div>
+                     메리워드
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1d09fc140feb5504e5b7ed3a1af4eb9e = L.circle(
+                [37.49689827, 126.892606],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_1d09fc140feb5504e5b7ed3a1af4eb9e.bindTooltip(
+                `<div>
+                     메이
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_38b9e11a6a0b238aeca2d794666517d1 = L.circle(
+                [37.50286612, 126.8919466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_38b9e11a6a0b238aeca2d794666517d1.bindTooltip(
+                `<div>
+                     새솜
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_17f3c3144ee7d16c139dd915986e1d1c = L.circle(
+                [37.49392857, 126.8502298],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_17f3c3144ee7d16c139dd915986e1d1c.bindTooltip(
+                `<div>
+                     섬기는
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f5325483c52bf7963c7c542865497536 = L.circle(
+                [37.48753576, 126.8542006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_f5325483c52bf7963c7c542865497536.bindTooltip(
+                `<div>
+                     영문
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_363eb244f638b72d113d7be049d00058 = L.circle(
+                [37.49467146, 126.8300624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_363eb244f638b72d113d7be049d00058.bindTooltip(
+                `<div>
+                     우신
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_beaa59b2da8cfbac633f073c4f4d70ae = L.circle(
+                [37.50497202, 126.8565519],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_beaa59b2da8cfbac633f073c4f4d70ae.bindTooltip(
+                `<div>
+                     은혜
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_13c97d7b5266a52988a019fa89b9e6da = L.circle(
+                [37.47888923, 126.8943284],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_13c97d7b5266a52988a019fa89b9e6da.bindTooltip(
+                `<div>
+                     지구촌
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5ac8977bac602db653c9b4e89cfb130b = L.circle(
+                [37.4974775, 126.8312817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_5ac8977bac602db653c9b4e89cfb130b.bindTooltip(
+                `<div>
+                     평화만들기
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a2037b0989659ddb20cf553435972310 = L.circle(
+                [37.50149371, 126.8585145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_a2037b0989659ddb20cf553435972310.bindTooltip(
+                `<div>
+                     푸르미
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_ba213829987b942a139fc78a574db93f = L.circle(
+                [37.48873171, 126.8543141],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_ba213829987b942a139fc78a574db93f.bindTooltip(
+                `<div>
+                     하모니
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_28f4e158de65abf336b37937288a880a = L.circle(
+                [37.48810135, 126.8871565],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_28f4e158de65abf336b37937288a880a.bindTooltip(
+                `<div>
+                     한사랑
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b49ad563c69d5372a41f34ced7082ce9 = L.circle(
+                [37.50353289, 126.8613448],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_b49ad563c69d5372a41f34ced7082ce9.bindTooltip(
+                `<div>
+                     함사람
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_96895959a249d7f680796d5cc712593d = L.circle(
+                [37.49642443, 126.839718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_96895959a249d7f680796d5cc712593d.bindTooltip(
+                `<div>
+                     해피
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b0cd02a593434701570daa8219fe60f5 = L.circle(
+                [37.482674, 126.889828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_b0cd02a593434701570daa8219fe60f5.bindTooltip(
+                `<div>
+                     구로구가족센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_da56812542520d917a9a2506002a3ff6 = L.circle(
+                [37.484525, 126.839901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_da56812542520d917a9a2506002a3ff6.bindTooltip(
+                `<div>
+                     천왕동청소년문화의집
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_0b868009214496c27f80deaec8c70d23 = L.circle(
+                [37.493434, 126.832759],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_0b868009214496c27f80deaec8c70d23.bindTooltip(
+                `<div>
+                     궁동청소년문화의집
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_e764355eb81d4be6727c199fa19844a8 = L.circle(
+                [37.505356, 126.857403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_e764355eb81d4be6727c199fa19844a8.bindTooltip(
+                `<div>
+                     청소년입장지대 고척신나구로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2cb12c7939b79d118e852a2ac859e20c = L.circle(
+                [37.48418114, 126.8416517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2cb12c7939b79d118e852a2ac859e20c.bindTooltip(
+                `<div>
+                     서울하늘숲초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6461c2860d6f915a758ec060822bdc9f = L.circle(
+                [37.49721962, 126.8906895],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_6461c2860d6f915a758ec060822bdc9f.bindTooltip(
+                `<div>
+                     영림중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4b5485069cf31be4bc9b0dc705eabe9f = L.circle(
+                [37.50491523, 126.8443653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_4b5485069cf31be4bc9b0dc705eabe9f.bindTooltip(
+                `<div>
+                     서울매봉초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_30e01668835670eb87f08eddfe379adb = L.circle(
+                [37.47701589, 126.8241103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_30e01668835670eb87f08eddfe379adb.bindTooltip(
+                `<div>
+                     서울항동초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4406fcd3269814a5c37c0157220daa5c = L.circle(
+                [37.50220279, 126.8744458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_4406fcd3269814a5c37c0157220daa5c.bindTooltip(
+                `<div>
+                     구현고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_0842b9b23545b0af1b39781478b3f7f4 = L.circle(
+                [37.51198439, 126.8832546],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_0842b9b23545b0af1b39781478b3f7f4.bindTooltip(
+                `<div>
+                     서울신도림초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_72d50f2fbc3b059d71a96c6b230c3e0e = L.circle(
+                [37.48145598, 126.8370629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_72d50f2fbc3b059d71a96c6b230c3e0e.bindTooltip(
+                `<div>
+                     서울천왕초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9389045ccf1d0f44eb32ce96591fbed6 = L.circle(
+                [37.49966003, 126.8897631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_9389045ccf1d0f44eb32ce96591fbed6.bindTooltip(
+                `<div>
+                     서울신구로초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4e6dfe7a1d9be94fce8687d0f1b97b38 = L.circle(
+                [37.50714192, 126.8795527],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_4e6dfe7a1d9be94fce8687d0f1b97b38.bindTooltip(
+                `<div>
+                     서울신미림초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9555f345812a7ccf98b7bd508daaaca1 = L.circle(
+                [37.50094829, 126.8569791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_9555f345812a7ccf98b7bd508daaaca1.bindTooltip(
+                `<div>
+                     서울고척초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7f61a12911e78ef814276683a1b44735 = L.circle(
+                [37.48791416, 126.8232907],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_7f61a12911e78ef814276683a1b44735.bindTooltip(
+                `<div>
+                     유한공업고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_52488b4b3d2e938f8ea2d0efe70d2d22 = L.circle(
+                [37.49319187, 126.8734727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_52488b4b3d2e938f8ea2d0efe70d2d22.bindTooltip(
+                `<div>
+                     서울구일초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_23c17ca6f43a403790793551234bb7d1 = L.circle(
+                [37.48265442, 126.8373336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_23c17ca6f43a403790793551234bb7d1.bindTooltip(
+                `<div>
+                     천왕중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9a0d8da67e196a8c74a52649b57ccac1 = L.circle(
+                [37.49016566, 126.8264392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_9a0d8da67e196a8c74a52649b57ccac1.bindTooltip(
+                `<div>
+                     서울오정초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_581c4e3ed8637cf1d95bade0d882f012 = L.circle(
+                [37.48564539, 126.8838134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_581c4e3ed8637cf1d95bade0d882f012.bindTooltip(
+                `<div>
+                     서울영일초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_26427ec5eb03b1a5456a426b7ae4ffa7 = L.circle(
+                [37.48896082, 126.8955833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_26427ec5eb03b1a5456a426b7ae4ffa7.bindTooltip(
+                `<div>
+                     서울영서초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_ca94fd3f31af9920db5617c5d6d51713 = L.circle(
+                [37.4875269, 126.8510711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_ca94fd3f31af9920db5617c5d6d51713.bindTooltip(
+                `<div>
+                     개웅중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_be0f6015447f9470a3bee2ebc7f53b60 = L.circle(
+                [37.49400506, 126.8259667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_be0f6015447f9470a3bee2ebc7f53b60.bindTooltip(
+                `<div>
+                     서울온수초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1ced403b8ea2468daf06babed746f4fc = L.circle(
+                [37.48968652, 126.8391127],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_1ced403b8ea2468daf06babed746f4fc.bindTooltip(
+                `<div>
+                     서울오류남초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2c3925fdc16beee6646bd45b3bfaa9de = L.circle(
+                [37.50035507, 126.827683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2c3925fdc16beee6646bd45b3bfaa9de.bindTooltip(
+                `<div>
+                     예림디자인고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_791f680568281272aca38077d537d468 = L.circle(
+                [37.49530091, 126.8737702],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_791f680568281272aca38077d537d468.bindTooltip(
+                `<div>
+                     구일중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_9212d3f16e68ff09680d915656284543 = L.circle(
+                [37.49993066, 126.8326087],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_9212d3f16e68ff09680d915656284543.bindTooltip(
+                `<div>
+                     서울공연예술고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7a464fc955bf9495245755db320794e6 = L.circle(
+                [37.48705969, 126.837249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_7a464fc955bf9495245755db320794e6.bindTooltip(
+                `<div>
+                     오남중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_7b3a23997ab340874855adcef46a90e3 = L.circle(
+                [37.49752741, 126.84203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_7b3a23997ab340874855adcef46a90e3.bindTooltip(
+                `<div>
+                     서울오류초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_08db54ddf2c3f48b75bc12b955fb41df = L.circle(
+                [37.49761122, 126.8657993],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_08db54ddf2c3f48b75bc12b955fb41df.bindTooltip(
+                `<div>
+                     서울고원초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_acf4da8d5180eb38af4c39b3e9edec48 = L.circle(
+                [37.49490231, 126.8263536],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_acf4da8d5180eb38af4c39b3e9edec48.bindTooltip(
+                `<div>
+                     우신고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_fa34be37a1004c7513d693fac5fe5353 = L.circle(
+                [37.49485972, 126.8910999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_fa34be37a1004c7513d693fac5fe5353.bindTooltip(
+                `<div>
+                     구로중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_181829fda9b9c77b01b850354d9eee5e = L.circle(
+                [37.5050561, 126.8491198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_181829fda9b9c77b01b850354d9eee5e.bindTooltip(
+                `<div>
+                     서울세곡초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f04553a60ff81dd8b302a526999aee31 = L.circle(
+                [37.51406292, 126.8820838],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_f04553a60ff81dd8b302a526999aee31.bindTooltip(
+                `<div>
+                     신도림고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5c6e6e9da41d9799406a2e999b7fd434 = L.circle(
+                [37.50035507, 126.827683],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_5c6e6e9da41d9799406a2e999b7fd434.bindTooltip(
+                `<div>
+                     오류고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_39675730ce3f5f2a0882622deabbe316 = L.circle(
+                [37.48285456, 126.82019],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_39675730ce3f5f2a0882622deabbe316.bindTooltip(
+                `<div>
+                     항동중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_84067d4ba13e605247b6223f762ac560 = L.circle(
+                [37.50804938, 126.8498691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_84067d4ba13e605247b6223f762ac560.bindTooltip(
+                `<div>
+                     고척고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6d3277c55593059e69723fc69b38cbe0 = L.circle(
+                [37.49746187, 126.8865543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_6d3277c55593059e69723fc69b38cbe0.bindTooltip(
+                `<div>
+                     서울구로초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_969b6070df237c32b1f0686c69ff7975 = L.circle(
+                [37.49490231, 126.8263536],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_969b6070df237c32b1f0686c69ff7975.bindTooltip(
+                `<div>
+                     우신중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b5fad3a718a707b3c7e8f9bba3c82e49 = L.circle(
+                [37.51074073, 126.8848071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_b5fad3a718a707b3c7e8f9bba3c82e49.bindTooltip(
+                `<div>
+                     신도림중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2ed028f24d3b0cc07d6636ad47888ee9 = L.circle(
+                [37.48952491, 126.857976],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2ed028f24d3b0cc07d6636ad47888ee9.bindTooltip(
+                `<div>
+                     서울개봉초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2cc637685aeb145693cd40cc5ef01457 = L.circle(
+                [37.49599268, 126.8654289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2cc637685aeb145693cd40cc5ef01457.bindTooltip(
+                `<div>
+                     경인고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1d8d1e3885c039f585784385a750b80b = L.circle(
+                [37.50605683, 126.857346],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_1d8d1e3885c039f585784385a750b80b.bindTooltip(
+                `<div>
+                     서울덕의초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a6e20b45923ce334020ffced518f262d = L.circle(
+                [37.48857132, 126.8499823],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_a6e20b45923ce334020ffced518f262d.bindTooltip(
+                `<div>
+                     서울개웅초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_325776b5f6e2adf66f3851742a39e5ea = L.circle(
+                [37.4975694, 126.8273517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_325776b5f6e2adf66f3851742a39e5ea.bindTooltip(
+                `<div>
+                     세종과학고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2f99a85e9d4efefab2f315c6961eeaf7 = L.circle(
+                [37.50382919, 126.8282007],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2f99a85e9d4efefab2f315c6961eeaf7.bindTooltip(
+                `<div>
+                     서서울생활과학고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_baf1e45b5f04995218074db6cc1a9064 = L.circle(
+                [37.49350529, 126.8746185],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_baf1e45b5f04995218074db6cc1a9064.bindTooltip(
+                `<div>
+                     구일고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_60ef5d0ab71b4b96375dbde0874fde84 = L.circle(
+                [37.50510665, 126.8880137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_60ef5d0ab71b4b96375dbde0874fde84.bindTooltip(
+                `<div>
+                     서울미래초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4f8f2f1b83609e4e87bdf6e9f2e1272f = L.circle(
+                [37.48911393, 126.8956154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_4f8f2f1b83609e4e87bdf6e9f2e1272f.bindTooltip(
+                `<div>
+                     영서중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f96643fc0f77ca29349261293180d387 = L.circle(
+                [37.49974083, 126.8613425],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_f96643fc0f77ca29349261293180d387.bindTooltip(
+                `<div>
+                     고척중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_4f9972948f4806b1e3fa242fd16341f5 = L.circle(
+                [37.49884008, 126.8903092],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_4f9972948f4806b1e3fa242fd16341f5.bindTooltip(
+                `<div>
+                     구로고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_3f0bc74015c17871b3bb5a86dd6272f3 = L.circle(
+                [37.50352932, 126.8423998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_3f0bc74015c17871b3bb5a86dd6272f3.bindTooltip(
+                `<div>
+                     개봉중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_1fb1d21c412c524177e2345f4f781b35 = L.circle(
+                [37.48420602, 126.8902182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_1fb1d21c412c524177e2345f4f781b35.bindTooltip(
+                `<div>
+                     서울구로남초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2a2e872ed6c733e95a962faa171cc047 = L.circle(
+                [37.49053652, 126.8371091],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2a2e872ed6c733e95a962faa171cc047.bindTooltip(
+                `<div>
+                     덕일전자공업고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f08e9f3503aae031328a715a628f2e70 = L.circle(
+                [37.49407053, 126.8927802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_f08e9f3503aae031328a715a628f2e70.bindTooltip(
+                `<div>
+                     서울동구로초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a1d5924a3b894a471bb2d8dc0e747110 = L.circle(
+                [37.49846566, 126.8536725],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_a1d5924a3b894a471bb2d8dc0e747110.bindTooltip(
+                `<div>
+                     경인중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_fa6278ee472e6df092e5fb53b2f01512 = L.circle(
+                [37.50786222, 126.8462113],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_fa6278ee472e6df092e5fb53b2f01512.bindTooltip(
+                `<div>
+                     오류중학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_cc377cb21ec72b423ee72e0814155d33 = L.circle(
+                [37.48303904, 126.8509791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_cc377cb21ec72b423ee72e0814155d33.bindTooltip(
+                `<div>
+                     서울개명초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2ee50861d2b5af2731a1b6e5c0740bc7 = L.circle(
+                [37.499461, 126.865301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d64c117d68bf755a3e939e4abe6fa36c);
+        
+    
+            circle_2ee50861d2b5af2731a1b6e5c0740bc7.bindTooltip(
+                `<div>
+                     서울고산초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
